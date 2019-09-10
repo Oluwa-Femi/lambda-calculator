@@ -29,15 +29,17 @@ function App() {
     };
   return (
     <div className="container">
+      <div className="logo">
       <Logo />
+      </div>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       <Display number={displayValue} />
-      <div className="left">
+      <div className = "buttonContainer black">
+      <div className="red">
       <Specials />
       <Numbers addNumber={addNumber} />
       </div>
-      <div className="ops">
       <Operators addOperator={addOperator} />
       </div>
       </div>

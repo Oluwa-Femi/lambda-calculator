@@ -15,12 +15,13 @@ const [buttonNumbers, setButtonNumbers] = useState(numbers);
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
+       <div className="numbers">
     {buttonNumbers.map(number => {
     return <NumberButton key={number} 
                           text={number} 
                           addNumber={props.addNumber} />;
     })}
-
+    </div>
     </div>
   );
 };
